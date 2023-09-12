@@ -21,3 +21,50 @@
  * concat
  */
 
+function isTrue(dataChunk) {
+    return (dataChunk === true);
+}
+
+function isFalse(dataChunk) {
+    return (dataChunk === false);
+}
+
+function not(dataChunk) {
+    return !dataChunk;
+}
+
+function addOne(num) {
+    if (typeof num === "number") {
+        return num + 1;
+    } else {
+        return parseFloat(num) + 1;
+    }
+}
+
+function isEven(num) {
+    if (typeof num === "number") {
+        return (num % 2 === 0);
+    } else {
+        return (parseFloat(num) % 2 === 0);
+    }
+}
+
+function isIdentical(data1, data2) {
+    return (data1 === data2);
+}
+
+function isEqual(data1, data2) {
+    return (data1 == data2);
+}
+
+function or (data1, data2) {
+    return (data1 || data2);
+}
+
+function and (data1, data2) {
+    return (data1 && data2);
+}
+
+function concat (data1, data2) {
+    return (data1.toString() + data2.toString());
+}
